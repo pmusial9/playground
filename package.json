@@ -5,15 +5,26 @@
   "main": "index.js",
   "author": "Piotr Musial",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
   "private": true,
-  "scripts" : {
+  "scripts": {
     "webpack": "webpack"
   },
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
     "webpack": "^4.8.2",
     "webpack-cli": "^2.1.3"
   }
