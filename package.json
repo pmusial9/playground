@@ -14,7 +14,7 @@
   },
   "private": true,
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack --watch"
   },
   "dependencies": {
     "react": "^16.3.2",
