@@ -1,0 +1,42 @@
+{
+    "buildOnSave": false,
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "allowJs": false,
+        "jsx": "react",
+        "target": "ES5",
+        "module": "commonjs",
+        "inlineSourceMap": false,
+        "sourceMap": true,
+        "removeComments": false,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": false,
+        "strictFunctionTypes": false,
+        "importHelpers": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": [
+            "es5",
+            "dom",
+            "es2015",
+            "es2016.array.include",
+            "es2017.object"
+        ],
+        "types": [
+            "react",
+            "react-dom"
+        ],
+        "paths": {
+            "tslib" : ["node_modules/tslib/tslib.d.ts"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
