@@ -20,6 +20,7 @@
         "importHelpers": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
+        "moduleResolution": "node",
         "lib": [
             "es5",
             "dom",
