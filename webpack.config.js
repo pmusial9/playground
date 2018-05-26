@@ -2,13 +2,13 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './index.tsx',
+    entry: './source/index.tsx',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
-        extensions: ['.tsx', '.js', '.jsx'],
+        extensions: ['.tsx', '.js', '.jsx', '.scss', '.css'],
     },
     module: {
         rules: [
@@ -20,6 +20,18 @@ module.exports = {
                 ],
             },
             { test: /\.tsx?$/, loader: 'ts-loader' },
+            {
+                test: /\.css$/,
+                loader: 'style-loader',
+            }, {
+                test: /\.css$/,
+                loader: 'css-loader',
+                query: {
+                    modules: true,
+                    localIdentName: '[name]__[local]___[hash:base64:5]',
+                },
+            },
+
         ],
     },
 };
